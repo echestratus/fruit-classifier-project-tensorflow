@@ -1,0 +1,13 @@
+# Python 3.12.3
+tensorflow==2.20.0
+tensorflow-addons==0.22.0   # ops tambahan jika perlu
+tensorflow-hub               # optional
+numpy
+pandas
+scikit-learn
+matplotlib
+opencv-python
+tqdm
+pyyaml
+Pillow
+lmdb                         # optional for big datasets
