@@ -1,9 +1,7 @@
-# on Raspberry Pi OS (64-bit) or Raspberry Pi OS Bullseye/Bookworm
-python3==3.12.3 (if available) or use system python3
-pip3
+# Untuk Raspberry Pi 4 (arm64/armv7) gunakan paket yang kompatibel
+tflite-runtime
+picamera
 numpy
+Pillow
 opencv-python-headless
-# Prefer installing tflite-runtime wheel for Raspberry Pi for performance:
-# pip install tflite-runtime==2.20.0.post1  (wheel matching your OS/arch)
-picamera2   # if using Raspberry Pi Camera and Pi OS newer versions
-# or use "opencv" VideoCapture if USB camera
+flask # jika ingin UI web

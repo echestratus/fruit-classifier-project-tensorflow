@@ -1,13 +1,26 @@
-# Python 3.12.3
-tensorflow==2.20.0
-tensorflow-addons==0.22.0   # ops tambahan jika perlu
-tensorflow-hub               # optional
+# TensorFlow dengan GPU support
+tensorflow[and-cuda]
+
+# Keras (standalone)
+keras
+
+# Image processing
+Pillow
+opencv-python
+
+# Data manipulation
 numpy
 pandas
-scikit-learn
+
+# Visualization
 matplotlib
-opencv-python
+seaborn
+
+# Model evaluation
+scikit-learn
+
+# Progress bar
 tqdm
+
+# Utilities
 pyyaml
-Pillow
-lmdb                         # optional for big datasets
