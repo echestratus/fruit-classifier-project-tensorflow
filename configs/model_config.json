@@ -11,5 +11,5 @@
         "sawit_matang"
     ],
     "confidence_threshold": 0.7,
-    "entropy_threshold": 0.7
+    "entropy_threshold": 0.6
 }

@@ -39,7 +39,7 @@ class Config:
     
     # Unknown detection settings
     CONFIDENCE_THRESHOLD = 0.70  # Below this = unknown
-    ENTROPY_THRESHOLD = 0.7  # High entropy = uncertain
+    ENTROPY_THRESHOLD = 0.6  # High entropy = uncertain
     
     # TFLite quantization options
     QUANTIZATION = 'float16'  # Options: 'float16', 'dynamic', 'int8', None
