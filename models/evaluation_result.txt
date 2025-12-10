@@ -1,0 +1,55 @@
+============================================================
+EVALUATION RESULTS
+============================================================
+
+📊 Overall Metrics:
+   Loss: 0.0818
+   Accuracy: 0.9583 (95.83%)
+
+📊 Confusion Matrix:
+[[12  0]
+ [ 1 11]]
+
+📊 Classification Report:
+                precision    recall  f1-score   support
+
+0_sawit_mentah     0.9231    1.0000    0.9600        12
+1_sawit_matang     1.0000    0.9167    0.9565        12
+
+      accuracy                         0.9583        24
+     macro avg     0.9615    0.9583    0.9583        24
+  weighted avg     0.9615    0.9583    0.9583        24
+
+
+📊 Per-Class Accuracy:
+   0_sawit_mentah: 1.0000 (100.00%)
+   1_sawit_matang: 0.9167 (91.67%)
+
+📊 Prediction Confidence Statistics:
+   Mean confidence: 0.9321
+   Median confidence: 0.9792
+   Min confidence: 0.5088
+   Max confidence: 1.0000
+   Std confidence: 0.1155
+
+⚠️  Low Confidence Predictions (< 0.7):
+   Count: 2/24 (8.33%)
+   These would be flagged as 'unknown' in production
+   Accuracy of low-conf predictions: 0.5000 (50.00%)
+
+============================================================
+
+============================================================
+ERROR ANALYSIS
+============================================================
+
+❌ Total misclassifications: 1/24
+
+📊 Misclassification breakdown:
+   1_sawit_matang → 0_sawit_mentah: 1
+
+📊 Confidence of misclassified predictions:
+   Mean: 0.5088
+   Median: 0.5088
+   Min: 0.5088
+   Max: 0.5088
