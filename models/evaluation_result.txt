@@ -2,42 +2,50 @@
 EVALUATION RESULTS
 ============================================================
 
-total 229 datasets
+total 2471 datasets
+sawit mentah: 867
+sawit matang: 1604
+train:
+   sawit mentah: 780
+   sawit matang: 1443
+validation:
+   sawit mentah: 87
+   sawit matang: 161
 
 📊 Overall Metrics:
-   Loss: 0.0818
-   Accuracy: 0.9583 (95.83%)
+   Loss: 0.1764
+   Accuracy: 0.9234 (92.34%)
 
 📊 Confusion Matrix:
-[[12  0]
- [ 1 11]]
+[[ 74  13]
+ [  6 155]]
 
 📊 Classification Report:
                 precision    recall  f1-score   support
 
-0_sawit_mentah     0.9231    1.0000    0.9600        12
-1_sawit_matang     1.0000    0.9167    0.9565        12
+0_sawit_mentah     0.9250    0.8506    0.8862        87
+1_sawit_matang     0.9226    0.9627    0.9422       161
 
-      accuracy                         0.9583        24
-     macro avg     0.9615    0.9583    0.9583        24
-  weighted avg     0.9615    0.9583    0.9583        24
+      accuracy                         0.9234       248
+     macro avg     0.9238    0.9067    0.9142       248
+  weighted avg     0.9235    0.9234    0.9226       248
 
 
 📊 Per-Class Accuracy:
-   0_sawit_mentah: 1.0000 (100.00%)
-   1_sawit_matang: 0.9167 (91.67%)
+   0_sawit_mentah: 0.8506 (85.06%)
+   1_sawit_matang: 0.9627 (96.27%)
 
 📊 Prediction Confidence Statistics:
-   Mean confidence: 0.9321
-   Median confidence: 0.9792
-   Min confidence: 0.5088
-   Max confidence: 1.0000
-   Std confidence: 0.1155
+   Mean confidence: 0.9223
+   Median confidence: 0.9744
+   Min confidence: 0.5030
+   Max confidence: 0.9999
+   Std confidence: 0.1127
 
 ⚠️  Low Confidence Predictions (< 0.7):
-   Count: 2/24 (8.33%)
+   Count: 19/248 (7.66%)
    These would be flagged as 'unknown' in production
-   Accuracy of low-conf predictions: 0.5000 (50.00%)
+   Accuracy of low-conf predictions: 0.4211 (42.11%)
 
 ============================================================
 
@@ -45,13 +53,14 @@ total 229 datasets
 ERROR ANALYSIS
 ============================================================
 
-❌ Total misclassifications: 1/24
+❌ Total misclassifications: 19/248
 
 📊 Misclassification breakdown:
-   1_sawit_matang → 0_sawit_mentah: 1
+   0_sawit_mentah → 1_sawit_matang: 13
+   1_sawit_matang → 0_sawit_mentah: 6
 
 📊 Confidence of misclassified predictions:
-   Mean: 0.5088
-   Median: 0.5088
-   Min: 0.5088
-   Max: 0.5088
+   Mean: 0.6949
+   Median: 0.6771
+   Min: 0.5030
+   Max: 0.9861

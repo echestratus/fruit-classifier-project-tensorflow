@@ -1,6 +1,7 @@
 """
 Feature Map Visualization Script - FIXED v2
 Generate and visualize feature maps from different layers of the palm fruit classification model
+python3 src/generate_feature_maps.py dataset/test/sawit-matang.jpg
 """
 import os
 import numpy as np

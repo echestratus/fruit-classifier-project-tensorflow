@@ -1,6 +1,7 @@
 """
 Advanced Feature Visualization
 Additional visualization techniques for understanding CNN behavior
+python3 src/advance_feature_visualization.py dataset/test/sawit-matang.jpg
 """
 import numpy as np
 import matplotlib.pyplot as plt
